@@ -42,7 +42,7 @@ jobs:
           cd $GLIBC
           mkdir build
           cd build
-          ../configure  --prefix=$HOME/local CFLAGS="-O2 -Wno-error=array-parameter -Wno-error=stringop-overflow -Wno-error=zero-length-bounds -Wno-error=use-after-free"       make
+          ../configure  --prefix=$HOME/local CFLAGS="-O2 -Wno-error=array-parameter -Wno-error=stringop-overflow -Wno-error=zero-length-bounds -Wno-error=use-after-free"
           make install
 
       - name: Build glibc
