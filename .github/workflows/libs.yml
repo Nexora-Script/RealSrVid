@@ -42,7 +42,7 @@ jobs:
           cd $GLIBC
           mkdir build
           cd build
-          ../configure  --prefix=$HOME/local
+          ../configure  --prefix=$HOME/local CFLAGS="-Wno-error=array-parameter"
           make
           make install
 
