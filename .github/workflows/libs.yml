@@ -42,7 +42,7 @@ jobs:
           cd $GLIBC
           mkdir build
           cd build
-          ../configure  --prefix=$HOME/local CFLAGS="-O2 -Wno-error=array-parameter -Wno-error=stringop-overflow"
+          ../configure  --prefix=$HOME/local CFLAGS="-O2 -Wno-error=array-parameter -Wno-error=stringop-overflow -Wno-error=zero-length-bounds"
           make
           make install
 
